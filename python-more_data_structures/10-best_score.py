@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+def best_score(a_dictionary):
+    if not a_dictionary:
+        return None
+    best_key = None
+    highest_score = None
+    for key, value in a_dictionary.items():
+        if highest_score is None or value > highest_score:
+            highest_score = value
+            best_key = key
+    return best_key

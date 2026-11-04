@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str):
         return 0
@@ -28,5 +27,4 @@ def roman_to_int(roman_string):
                 total += current_value
         else:
             total += current_value
-
     return total
